@@ -2,220 +2,473 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D•Academy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D•Academy</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
-    <!-- CSS Base -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <header id="header" class="header">
+  <header id="header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand text-uppercase text-bg-primary" href="#">D •Academy</a>
 
-        <nav class="navbar navbar-expand-lg bg-primary">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Botoes do Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#unidades">Unidades</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
-            <div class="container">
+  <!-- HERO -->
 
-                <a class="navbar-brand" href="#">D•Academy</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+  <section id="hero" class="hero">
+    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-                <!-- Botões do Menu -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Início</a>
-                        </li>
+      <div class="carousel-inner">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre</a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#servicos">Serviços</a>
-                        </li>
+        <!-- SLIDE 1 / FOTO 1 -->
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#precos">Preços</a>
-                        </li>
+        <div class="carousel-item active text-center">
+          <img src="/img/hero/piscina.png" alt="ambiente da academia com psicina e equipamentos de treino"
+            class="d-block w-100">
+          <div class="carousel-container">
+            <h2>Exclusividade e Bem-Estar</h2>
+            <p>
+              Desfrute de um ambiente de treino sereno e sofisticado, onde o design moderno encontra a funcionalidade
+              premium para sua jornada de saúde. Relaxe e revitalize-se em nossa piscina elegante após o treino.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="/img/hero/geral.png" alt="ambiente com homem se alongando" class="d-block w-100">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#precos">Unidades</a>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
 
-                        </li>
-                        </li>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          <!-- SLIDE 2 / FOTO 2 -->
+          <div class="carousel-container">
+            <h2>Energia e Conexão com a Natureza</h2>
+            <p>
+              Encontre o seu ritmo em um espaço inspirador, onde a luz natural e a vista panorâmica se unem a
+              equipamentos de ponta para otimizar seu desempenho. Sinta a vitalidade em um ambiente que reflete a
+              exclusividade e a paixão pelo bem-estar.
+            </p>
+          </div>
 
-    </header>
+          <!-- SLIDE 3 / FOTO 3 -->
+          <div class="carousel-container">
+            <h2>Amplitude e Foco</h2>
+            <p>
+              Um espaço projetado para o seu máximo desempenho, com equipamentos modernos e um design que inspira cada
+              movimento. Concentre-se em seus objetivos em um ambiente clean e espaçoso.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <!-- Sobre Mim / Sobre a Marca/Produto -->
-    <section class="about" id="about">
-    </section>
+      <!-- Botões de navegação -->
 
-    <section id="servicos">
-        Serviços
-    </section>
+      <!-- Voltar  -->
+      <a href="#hero-crousel" role="button" class="carousel-control-prev" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
 
-      <section id="precos">
-        Preços
-    </section>
+      </a>
 
-      <section id="contato">
-        Contato
-    </section>
+      <!-- Avançar -->
+      <a href="#hero-crousel" role="button" class="carousel-control-next" data-bs-slide="next">
+        <span class="carousel-control-prev-icon bi bi-chevron-right" aria-hidden="true"></span>
 
-    <!-- MAX WIDTH -- O - até o valor da Tabela  -->
+      </a>
+
+
+      <ol class="carousel-indicators">
+
+      </ol>
+
+    </div>
+  </section>
+
+
+
+  <!-- Sobre Mim / Sobre a Marca/Produto -->
+  <section class="about" id="about">
+    <!-- MAX WIDTH -- 0 - ate valor da Tabela -->
     <div class="container">
-        <!-- Centralizar o Conteúdo  -->
+      <!-- Centralizar o Conteudo -->
 
+      <div class="row">
+        <!-- Estrutura Imagem -->
+        <div class="col-lg-5 pt-5">
+          <img src="img/sobre.png" alt="homem forte, desenho artístico." loading="lazy" class="img-fluid" />
+          <img src="img/vesti.jpg" alt="vestiario de luxo" loading="lazy" class="img-fluid" />
+        </div>
 
-        <div class="row">
+        <!-- Estrutura dos Textos / Descrição -->
+        <div class="col-lg-7 pt-5">
+          <h3>Sobre Nós</h3>
 
+          <p>
+            Experimente o treinamento em um ambiente cuidadosamente projetado
+            para inspirar. Nossos espaços combinam estética sofisticada com
+            funcionalidade de elite, oferecendo um refúgio de tranquilidade e
+            foco, distante do comum. Cada área da
+            <strong>D •Academy</strong> é uma obra de arte pensada para
+            otimizar sua experiência e bem-estar.
+          </p>
 
-            <div class="container text-center mt-5">
-                <h1>Bem-vindo à D•Academy</h1>
-                <p class="lead">Sua Distinção, Elevada ao Máximo Padrão..</p>
-                <a href="#" class="btn btn-primary">Comece Agora</a>
+          <p>
+            A <strong>D•Academy</strong> investe nas inovações mais recentes
+            do mercado global de fitness. Com equipamentos de última geração e
+            tecnologia integrada, garantimos que cada treino seja otimizado,
+            seguro e incrivelmente eficaz, impulsionando seus resultados a
+            níveis que você nunca imaginou.
+          </p>
 
-            </div>
+          <p class="mb-0">
+            <em>Não oferecemos apenas treinos, mas uma verdadeira mentoria para
+              a vida, garantindo acompanhamento e resultados que superam todas
+              as expectativas.</em>
+          </p>
 
-            <!-- Estrutura Imagem -->
-            <div class="col-lg-5">
-                <img src="img/sobre.png" alt="homem forte, desenho artístico." loading="lazy" class="img-fluid">
-            </div>
-
-            <!-- Estruturas dos Textos / Descrição  -->
-            <div class="col-lg-7 coluna">
-                <h3>Sobre Nós</h3>
-                <p>
-                    Na D•Academy, redefinimos a experiência de bem-estar. Somos um santuário exclusivo onde a
-                    excelência encontra a paixão, e o luxo se entrelaça com o máximo desempenho.
-
-                    Cada detalhe foi meticulosamente planejado para oferecer uma jornada inigualável. Nossos espaços são
-                    projetados para elevar sua mente e corpo, equipados com tecnologia de ponta e um design
-                    arquitetônico sofisticado.
-
-                    Nossa equipe é composta por mestres em suas áreas, dedicados a guiar você ao seu sucesso, validando
-                    que somos o Cume do Treinamento. Padrão Mundial.
-
+          <ul class="list-unstyled mt-4">
+            <li class="d-flex mb-3">
+              <!-- <i class="bi bi-globe-americas text-primary fs-3 me-3"></i> -->
+              <i class="bi bi-trophy text-primary fs-3 me-3"></i>
+              <div>
+                <h5 class="mb-1">Treinos Espetaculares</h5>
+                <p class="mb-0">
+                  Explore o seu máximo desempenho e performance de um jeito
+                  que você nunca viu.
                 </p>
+              </div>
+            </li>
 
-                <p class="mb-5">
-                    <em>
-                        Convidamos você a descobrir o privilégio de ser inigualável.
-                    </em>
+            <li class="d-flex mb-3">
+              <i class="bi bi-map text-success fs-3 me-3"></i>
+              <div>
+                <h5 class="mb-1">Design e Ambiente Exclusivo</h5>
+                <p class="mb-0">
+                  Experimente o treinamento em um ambiente cuidadosamente
+                  projetado para inspirar. Nossos espaços combinam estética
+                  sofisticada com funcionalidade de elite, oferecendo um
+                  refúgio de tranquilidade e foco, distante do comum. Cada
+                  área da D•Academy é uma obra de arte pensada para otimizar
+                  sua experiência e bem-estar.
                 </p>
-            </div>
+              </div>
+            </li>
 
-            <ul class="list-unstyled mt-4">
-                <!-- Display Row (linha) -->
+            <li class="d-flex">
+              <i class="bi bi-people text-warning fs-3 me-3"></i>
+              <div>
+                <h5 class="mb-1">Tecnologia e Equipamentos de Ponta</h5>
+                <p class="mb-0">
+                  A D•Academy investe nas inovações mais recentes do mercado
+                  global de fitness. Com equipamentos de última geração e
+                  tecnologia integrada, garantimos que cada treino seja
+                  otimizado, seguro e incrivelmente eficaz, impulsionando seus
+                  resultados a níveis que você nunca imaginou.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <li>
-                    <i class="bi bi-gem text-primary fs-5"></i>
-                    <div>
-                        <h5 class="mb-1">Treinos Espetaculares</h5>
-                        <p class="mb-0">Explore o seu máximo desempenho e performance de um jeito que você nunca viu.
-                            Ambiente agradável e muito bem frequentado</p>
-                    </div>
-                    Design e Ambiente Exclusivo
-                    <p>Experimente o treinamento em um ambiente cuidadosamente projetado para inspirar. Nossos espaços
-                        combinam estética sofisticada com funcionalidade de elite, oferecendo um refúgio de
-                        tranquilidade e foco, distante do comum. Cada área da D•Academy é uma obra de arte pensada para
-                        otimizar sua experiência e bem-estar.</p>
-                </li>
+  <!-- Estatísticas -->
+  <section class="stats bg-soft-gray py-5 pt-3" id="stats">
+    <div class="container">
+      <!-- Conteúdo em Linha / horizontal -->
+      <div class="row">
+        <!-- Coluna 1 Stats 1 -->
+        <div class="col-lg-3 col-md-6">
+          <!-- Conteúdo -->
+          <div class="stats-item">
+            <!-- Ícone -->
 
-                <li>
-                    <i class="bi bi-lightning-charge text-warning"></i>
-                    <h5 class="mb-1">Tecnologia e Equipamentos de Ponta</h5>
-                    <p>A D•Academy investe nas inovações mais recentes do mercado global de fitness. Com equipamentos de
-                        última geração e tecnologia integrada, garantimos que cada treino seja otimizado, seguro e
-                        incrivelmente eficaz, impulsionando seus resultados a níveis que você nunca imaginou.</p>
-                </li>
+            <i class="bi bi-globe-americas text-primary fs-3 me-3"></i>
 
-                <li>
-                    <i class="bi bi-person-workspace text-success"></i>
-                    <h5 class="mb-1">Mentoria de Elite e Planos Personalizados</h5>
-                    <p>Nossa equipe de personal trainers é formada por especialistas renomados, prontos para elaborar um
-                        plano de treinamento e nutrição totalmente customizado às suas ambições. Não oferecemos apenas
-                        treinos, mas uma verdadeira mentoria para a vida, garantindo acompanhamento e resultados que
-                        superam todas as expectativas.</p>
-                </li>
-            </ul>
+            <span data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1.5"
+              class="purecounter"></span>
+
+            <p>
+              <strong>Unidades</strong>
+              <br><span>Internacionais</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <!-- Conteúdo -->
+          <div class="stats-item">
+            <!-- Ícone -->
+
+            <i class="bi bi-award text-warning fs-3 me-3"></i>
+
+            <span data-purecounter-start="0" data-purecounter-end="117" data-purecounter-duration="1.5"
+              class="purecounter"></span>
+
+            <p>
+              <strong>Prêmios</strong>
+              <br><span>Reconhecimento</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <!-- Conteúdo -->
+          <div class="stats-item">
+            <!-- Ícone -->
+
+            <i class="bi bi-person-video2 text-primary fs-3 me-3"></i>
+
+            <span data-purecounter-start="0" data-purecounter-end="58000" data-purecounter-duration="1.5"
+              class="purecounter"></span>
+
+            <p>
+              <strong>Clientes</strong>
+              <br><span>Fidelidade</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <!-- Conteúdo -->
+          <div class="stats-item">
+            <!-- Ícone -->
+
+            <i class="bi-book fs-3 me-3"></i>
+
+            <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1.5"
+              class="purecounter"></span>
+
+
+            <p><strong>Mentores</strong>
+              <br><span>Equipe de Elite</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="servicos" id="servicos">
+
+    <div class="container text-center">
+      <!-- Título ou Subtítulo -->
+      <h2 class="badge rounded-pill text-bg-info">Serviços</h2>
+
+      <div>
+        <span>Conheça os nossos</span>
+        <span class="text-primary">Serviços</span>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row gy-4 pt-4">
+
+        <!-- Coluna 1 -->
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div class="card card-body text-center shadow-sm h-100">
+            <i class="bi bi-water text-primary fs-1 mb-3"></i>
+
+            <h4>Piscinas Olímpicas</h4>
+            <p class="text-truncate">
+              As melhores e maiores piscinas que uma academia de alto valor
+              pode proporcionar.
+            </p>
+
+            <a href="#" class="stretched-link">
+              <button type="button" class="btn btn-primary">Leia Mais</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2 -->
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div class="card card-body text-center shadow-sm h-100">
+            <i class="bi bi-car-front-fill fs-1 mb-3"></i>
+
+            <h4>Estacionamento Seguro</h4>
+            <p class="text-truncate">
+              Sua tranquilidade começa antes de entrar. Oferecemos valet
+              service e segurança 24 horas, garantindo que seu foco esteja
+              apenas no treino.
+            </p>
+
+            <a href="#" class="stretched-link">
+              <button type="button" class="btn btn-primary">Leia Mais</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 3 -->
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div class="card card-body text-center shadow-sm h-100">
+            <i class="bi bi-motherboard text-danger fs-1 mb-3"></i>
+
+            <h4>Aparelhagem Moderna</h4>
+            <p class="text-truncate">
+              Equipamentos de última geração e tecnologia integrada de marcas
+              líderes mundiais. Treine com precisão científica e o que há de
+              mais avançado no fitness global.
+            </p>
+
+            <a href="#" class="stretched-link">
+              <button type="button" class="btn btn-primary">Leia Mais</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 4 -->
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div class="card card-body text-center shadow-sm h-100">
+            <i class="bi bi-droplet-half  text-primary fs-1 mb-3"></i>
+
+            <h4>Vestiários Tecnológicos</h4>
+            <p class="text-truncate">
+              Um verdadeiro spa de recuperação. Vestiários climatizados,
+              armários com senha digital, amenidades de grife e iluminação
+              perfeita para o seu ritual pós-treino.
+            </p>
+
+            <a href="#" class="stretched-link">
+              <button type="button" class="btn btn-primary">Leia Mais</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 5 -->
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div class="card card-body text-center shadow-sm h-100">
+            <i class="bi bi-person-square text-warning fs-1 mb-3"></i>
+
+            <h4>Mentoria Especializada</h4>
+            <p class="text-truncate">
+              Sua jornada é guiada por especialistas. Nossos mentores
+              internacionais elaboram planos totalmente personalizados,
+              combinando ciência e experiência para resultados que superam o
+              esperado.
+            </p>
+
+            <a href="#" class="stretched-link">
+              <button type="button" class="btn btn-primary">Leia Mais</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 6 -->
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div class="card card-body text-center shadow-sm h-100">
+            <i class="bi bi-pin-map text-success fs-1 mb-3"></i>
+
+            <h4>Localização privilegiada</h4>
+            <p class="text-truncate">
+              Estar bem localizado não é luxo, é conveniência. Acesso
+              facilitado e o charme de treinar em um dos endereços mais
+              valorizados da cidade.
+            </p>
+
+            <a href="#" class="stretched-link">
+              <button type="button" class="btn btn-primary">Leia Mais</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="servicos pt-5" id=servicos>
+
+  </section>
+
+
+  <!-- C-T-A Call to Action -->
+  <section class="cta" id="cta">
+
+    <!-- Fundo CTA -->
+    <img src="img/ctaimg.jpg" alt="homem treinando luta" />
+
+
+    <!-- Textos para CTA -->
+    <div class="container">
+
+      <div class="row justify-content-center">
+
+        <!-- Colunas Bootstrap -->
+        <div class="col-lx-10 text-center">
+          <h3 class="text-light fw-bold"> MENSAGEM PARA DESTAQUE </h3>
+          <p class="text-light">Descrição sobre o tema / assunto</p>
+          <a href="#" class="cta-btn text-light">
+            <i class="bi bi-whatsapp"></i> Whatsapp
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
 
 
 
 
 
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Contador Stats -->
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-            <!-- <footer class="bg-light text-center py-4">
-        <p class="mb-0">&copy; 2024 D•Academy. Todos os direitos reservados.</p>
-
-    </footer> -->
-
-
-            <div class="container text-center mt-5">
-                <h2>Nossos Cursos</h2>
-                <p class="lead">O Padrão Ouro. Sem Exceções. Sem Comparação para alcançar seus objetivos.</p>
-            </div>
-
-            <div class="container text-center mt-5">
-                <h2>Contato</h2>
-                <p class="lead">Entre em contato conosco para mais informações ou suporte.</p>
-            </div>
-
-            <!-- <footer class="bg-light text-center py-4">
-        <p class="mb-0">&copy; 2024 D•Academy. Todos os direitos reservados.</p>
-    </footer> -->
-
-            <div class="container text-center mt-5">
-                <h2>Depoimentos</h2>
-                <p class="lead">Veja o que nossos alunos dizem sobre nós.</p>
-            </div>
-
-            <div class="container text-center mt-5">
-                <h2>Blog</h2>
-                <p class="lead">Fique por dentro das últimas novidades e dicas.</p>
-            </div>
-
-            <!-- <footer class="bg-light text-center py-4">
-        <p class="mb-0">&copy; 2024 D•Academy. Todos os direitos reservados.</p>
-    </footer> -->
-
-            <div class="container text-center mt-5">
-                <h2>FAQ</h2>
-                <p class="lead">Perguntas frequentes para ajudar você.</p>
-
-                <!-- Bootstrap JS -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script>
+    new PureCounter();
+  </script>
 </body>
 
 </html>
