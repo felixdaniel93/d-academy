@@ -173,3 +173,52 @@
     transform: scale(1.1);
     border: none;
 }
+
+
+/* Fim Call to Action */
+
+/* Fltros */
+
+/* UL */
+.portfolio-filters {
+    list-style: none;
+    margin: 10px auto 20px auto;
+    text-align: center;
+
+}    
+
+/* Herança = Todas as Li's da ul */
+
+.portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    /* background: rgba(33, 122, 255, 0.877); */
+    color: rgba(33, 122, 255, 0.877);
+    padding: 0rem 0.5rem;
+    border-radius: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+   
+}
+
+.portfolio-filters li:hover,
+.portfolio-filters li.filter-active {
+   
+    /* filter: brightness(90%); */
+    background: #0b75de ;
+    color: rgb(255, 255, 255);
+}
+
+/* Fim Filtros */
+
+/* O site em telas até 575px */
+@media (max-width: 575px) {
+    .portfolio-filters li {
+        font-size: 1rem;
+
+    }
+}

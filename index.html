@@ -461,161 +461,300 @@
   <section class="unidades pt-5 mb-5" id="unidades">
 
     <!-- Título da Seção -->
-    <div class="container text-center"></div>
-    <h2 class="badge rounded-pill text-bg-info">Unidades</h2>
+    <div class="container text-center">
+      <h2 class="badge rounded-pill text-bg-info text-center">Unidades</h2>
 
 
-    <div class="fs-3">
-      <span>Conheça as nossos unidades</span>
-      <span class="text-primary fw-bold">Unidades</span>
+      <div class="fs-3">
+        <span>Conheça as nossos unidades</span>
+        <span class="text-primary fw-bold text-center">Unidades</span>
+      </div>
     </div>
 
 
 
     <!-- Estrutura da Galeria -->
-    <div class="">
+    <div class="container-fluid mt-4">
 
-      <!-- ISOTOPE // Mansory -->
+      <!-- ISOTOPE // Masonry -->
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-default-filter="*"
+        data-sort-to="original-order">
 
-      <!-- Filtro -->
-      <div class="isotope-layout" data-default-filter="*" data-layout="mansory">
-
-        <!-- Botões Filtro -->
-        <ul class="portifolio-filters isotope-filters">
-
-          <!-- Todos ou o Reset / Limpar a Seleção -->
-          <li data-filter="*" class="silter-active">Todos</li>
-          <li data-filter="">Vestiários</li>
-          <li data-filter="">Piscinas</li>
-          <li data-filter="">Aparelhagens</li>
-          <li data-filter="">Estacionamentos</li>
+        <!-- Botões do Filtro -->
+        <ul class="portfolio-filters isotope-filters">
+          <li data-filter="*" class="filter-active">Todos</li>
+          <li data-filter=".filter-vestiarios">Vestiários</li>
+          <li data-filter=".filter-piscinas">Piscinas</li>
+          <li data-filter=".filter-aparelhagens">Aparelhagens</li>
+          <li data-filter=".filter-estacionamentos">Estacionamentos</li>
         </ul>
 
-        <div class="row g-0 isotope-container">
+        <!-- Galeria na horizontal -->
+        <div class="row g-0 isotope-container masonry-grid">
 
-          <!-- Fotos 1 Colunas Bootstrap-->
-          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
-
+          <!-- imagem 1 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-aparelhagens">
             <div class="portfolio-content">
               <img src="img/galeria/aparelhagem1.png" alt="aparelhos de musculação modernos" class="img-fluid">
-
               <div class="portfolio-info">
-                <!-- Link Foto -->
                 <a href="img/galeria/aparelhagem1.png" class="glightbox preview-link">
                   <i class="bi bi-zoom-in"></i>
-
                 </a>
-
-
-                <a href=""></a>
               </div>
+            </div>
+          </div>
 
+          <!-- imagem 2 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-estacionamentos">
+            <div class="portfolio-content">
+              <img src="img/galeria/estacionamento1.png" alt="estacionamento moderno" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/estacionamento1.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- imagem 3 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-piscinas">
+            <div class="portfolio-content">
+              <img src="img/galeria/piscina1.png" alt="piscina moderna" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/piscina1.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- imagem 4 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-vestiarios">
+            <div class="portfolio-content">
+              <img src="img/galeria/vestiario1.png" alt="vestiário moderno" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/vestiario1.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- imagem 5 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-aparelhagens">
+            <div class="portfolio-content">
+              <img src="img/galeria/aparelhagem2.png" alt="aparelhos de musculação modernos" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/aparelhagem2.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- imagem 6 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-estacionamentos">
+            <div class="portfolio-content">
+              <img src="img/galeria/estacionamento2.png" alt="estacionamento moderno" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/estacionamento2.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- imagem 7 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-piscinas">
+            <div class="portfolio-content">
+              <img src="img/galeria/piscina2.png" alt="piscina moderna" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/piscina2.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- imagem 8 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-vestiarios">
+            <div class="portfolio-content">
+              <img src="img/galeria/vestiario2.png" alt="vestiário moderno" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/vestiario2.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-aparelhagens">
+            <div class="portfolio-content">
+              <img src="img/galeria/aparelhagem3.png" alt="aparelhos de musculação modernos" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/aparelhagem3.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-estacionamentos">
+            <div class="portfolio-content">
+              <img src="img/galeria/estacionamento3.png" alt="estacionamento moderno" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/estacionamento3.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 11 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-piscinas">
+            <div class="portfolio-content">
+              <img src="img/galeria/piscina3.png" alt="piscina moderna" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/piscina3.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 12 -->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-vestiarios">
+            <div class="portfolio-content">
+              <img src="img/galeria/vestiario3.png" alt="vestiário moderno" class="img-fluid">
+              <div class="portfolio-info">
+                <a href="img/galeria/vestiario3.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- C-T-A Call to Action -->
+      <section class="cta" id="cta">
+
+        <!-- Fundo CTA -->
+        <img src="img/ctaimg.jpg" alt="homem treinando luta" />
+
+
+        <!-- Textos para CTA -->
+        <div class="container">
+
+          <div class="row justify-content-center">
+
+            <!-- Colunas Bootstrap -->
+            <div class="col-lx-10 text-center">
+              <h3 class="text-light fw-bold"> MENSAGEM PARA DESTAQUE </h3>
+              <p class="text-light">Descrição sobre o tema / assunto</p>
+              <a href="#" class="cta-btn text-light">
+                <i class="bi bi-whatsapp"></i> Whatsapp
+              </a>
             </div>
 
-
-
-
-
-
-
-
-
-          </div>
-
-          <!-- Fotos 1 Colunas Bootstrap-->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            FOTO 2
-          </div>
-
-          <!-- Fotos 1 Colunas Bootstrap-->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            FOTO 3
-          </div>
-
-          <!-- Fotos 1 Colunas Bootstrap-->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            FOTO 4
           </div>
 
         </div>
 
 
+      </section>
 
-      </div>
+      <section class="unidades" id="unidades">
+        <section class=" pt-5 mb-5" id="servicos"></section>
 
-
-    </div>
-
-  </section>
-
-  <!-- C-T-A Call to Action -->
-  <section class="cta" id="cta">
-
-    <!-- Fundo CTA -->
-    <img src="img/ctaimg.jpg" alt="homem treinando luta" />
-
-
-    <!-- Textos para CTA -->
-    <div class="container">
-
-      <div class="row justify-content-center">
-
-        <!-- Colunas Bootstrap -->
-        <div class="col-lx-10 text-center">
-          <h3 class="text-light fw-bold"> MENSAGEM PARA DESTAQUE </h3>
-          <p class="text-light">Descrição sobre o tema / assunto</p>
-          <a href="#" class="cta-btn text-light">
-            <i class="bi bi-whatsapp"></i> Whatsapp
-          </a>
+        <!-- Título da seção -->
+        <div class="container text-center">
+          <h2></h2>
         </div>
-
-      </div>
-
-    </div>
+      </section>
 
 
-  </section>
-
-  <section class="unidades" id="unidades">
-    <section class=" pt-5 mb-5" id="servicos"></section>
-
-    <!-- Título da seção -->
-    <div class="container">
-      <h2></h2>
-    </div>
-  </section>
+      <!-- Isotope Filtro -->
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 
-  <!-- Isotope -->
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+      <!-- AOS JS Animação Fade in -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <!-- GLightBox JS - Galeria  -->
+      <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Contador Stats (estatísticas) pure counter -->
+      <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+      <!-- Masonry Grid para Galeria -->
+      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+      <!-- imagesLoaded (recomendado para esperar as imagens carregarem) -->
+      <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- GLightBox JS  -->
-  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+      <!-- JavaScript animação -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+          // Iniciar Pure Counter
+          new PureCounter();
 
-  <!-- Contador Stats -->
-  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+          // Iniciar o AOS
+          AOS.init({ duration: 1200 });
+
+          // Galeria --- GLightBox
+          const lightbox = GLightbox();
+
+          // ISOTOPE + MASONRY + FILTER 
+          const grid = document.querySelector('.isotope-container');
+          const filterButtons = document.querySelectorAll('.portfolio-filters li');
+
+          if (grid) {
+
+            imagesLoaded(grid, function () {
+
+              // Iniciar Isotope
+              const iso = new Isotope(grid, {
+                itemSelector: '.portfolio-item',
+                layoutMode: 'masonry',
+                percentPosition: true,
+                masonry: {
+                  columnWidth: '.portfolio-item'
+                }
+              });
+
+              // Filtrar ao clicar nos botões
+              filterButtons.forEach(btn => {
+                btn.addEventListener('click', function () {
+
+                  // Remover classe ativa
+                  filterButtons.forEach(b => b.classList.remove('filter-active'));
+                  this.classList.add('filter-active');
+
+                  // Pegar o atributo data-filter do botão clicado
+                  const filterValue = this.getAttribute('data-filter');
+                  iso.arrange({ filter: filterValue });
+
+                });
+              });
+
+            });
+          }
+
+        });
+      </script>
 
 
-  <!-- JavaScript animação -->
-  <script>
-    new PureCounter();
-    AOS.init(
-        {duration: 1200}
-    );
-
-    const lightbox = GLightbox({
-      
-    });
-
-
-  </script>
 
 </body>
 
