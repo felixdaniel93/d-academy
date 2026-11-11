@@ -11,9 +11,6 @@
 
 /* # Hero Section */
 
-.hero {
-  padding: 0;
-}
 /* HERO */
 .hero {
     padding: 0;
@@ -161,7 +158,7 @@
 
 .cta::before {
     content: "";
-    background: rgba(70, 70, 70, 0.116);
+    background: rgba(0, 0, 0, 0.5); /* escurece a foto p/ o texto ler bem */
     position: absolute;
     inset: 0;
     z-index: 3;
@@ -170,6 +167,7 @@
 }
 
 .cta .cta-btn {
+    display: inline-block; /* necessário para o scale funcionar */
     font-size: 1.5rem;
     color: white;
     /* background-color: green; */
@@ -186,7 +184,7 @@
 .cta .cta-btn:hover {
     background-color: green;
     transform: scale(1.1);
-    border: none;
+    border-color: green; /* mantém o tamanho, sem "pulo" */
 }
 
 
@@ -240,6 +238,7 @@
 
 .portfolio-content .portfolio-info {
     opacity: 0;
+    transition: opacity 0.3s;
     position: absolute;
     inset: 0;
     z-index: 3;
@@ -275,4 +274,37 @@
 
 .portfolio-content img {
     transition: 0.3s;
+}
+
+/* ===== AJUSTES FINAIS ===== */
+
+/* Menu fixo não cobre o título ao navegar pelas âncoras */
+html { scroll-padding-top: 70px; }
+
+/* Estatísticas */
+.bg-soft-gray { background: #f4f6f8; }
+.stats-item { text-align: center; padding: 1rem 0; }
+.stats-item .purecounter { display: block; font-size: 2.5rem; font-weight: 700; line-height: 1.1; }
+.stats-item p { margin: 0.5rem 0 0; }
+
+/* Contato */
+.info-item { background: #fff; border: 1px solid #e5e5e5; border-radius: 0.75rem; padding: 1.5rem; text-align: center; height: 100%; }
+.info-item i { font-size: 2rem; color: #0b75de; }
+.info-item h3 { font-size: 1.1rem; margin: 0.5rem 0 0.25rem; }
+
+.form-contato label { display: block; font-weight: 500; margin-bottom: 0.25rem; }
+.form-contato input,
+.form-contato textarea { width: 100%; padding: 0.7rem 1rem; border: 1px solid #ced4da; border-radius: 0.5rem; }
+.form-contato input:focus,
+.form-contato textarea:focus { outline: none; border-color: #0b75de; box-shadow: 0 0 0 0.2rem rgba(11, 117, 222, 0.25); }
+.form-contato button[type="submit"] { background: #0b75de; color: #fff; border: 0; padding: 0.7rem 2.5rem; border-radius: 0.5rem; transition: background 0.3s; }
+.form-contato button[type="submit"]:hover { background: #095bb0; }
+
+/* Rodapé */
+.footer { background: #141414; color: #fff; }
+
+/* Hero em telas pequenas */
+@media (max-width: 768px) {
+    .hero h2 { font-size: 1.8rem; text-align: center; padding: 0 1rem; }
+    .hero p { max-width: 90%; font-size: 1rem; }
 }
